@@ -12,7 +12,7 @@ class Type(models.Model):
 
 
 class List(models.Model):
-    list = models.CharField(max_length=100, null=False, blank=False, verbose_name='Текст')
+    name = models.CharField(max_length=100, null=False, blank=False, verbose_name='Текст')
     description = models.TextField(max_length=200, null=False, blank=False, verbose_name='Поле')
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Время создания')
     updated_at = models.DateTimeField(auto_now=True, verbose_name='Время изменения')
