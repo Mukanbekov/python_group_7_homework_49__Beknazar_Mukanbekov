@@ -16,6 +16,19 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from webapp.views import (
+    IndexView,
+    DetailView,
+    IndexRedirectView,
+    UpdateView,
+    DeleteView,
+)
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', IndexView.as_view(), name='index_view'),
+    path('detail/<int:id>/', DetailView.as_view(), name='detail_view'),
+    path('add/', IndexRedirectView.as_view(), name='task_create'),
+    path('update/<int:id>/', UpdateView.as_view(), name='task_update'),
+    path('delete/<int:id>', DeleteView.as_view(), name='task_delete')
 ]
