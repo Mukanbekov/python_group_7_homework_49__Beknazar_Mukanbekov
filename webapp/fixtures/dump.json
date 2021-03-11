@@ -1,0 +1,86 @@
+[
+{
+  "model": "webapp.status",
+  "pk": 1,
+  "fields": {
+    "status": "new"
+  }
+},
+{
+  "model": "webapp.status",
+  "pk": 2,
+  "fields": {
+    "status": "progress"
+  }
+},
+{
+  "model": "webapp.status",
+  "pk": 3,
+  "fields": {
+    "status": "done"
+  }
+},
+{
+  "model": "webapp.type",
+  "pk": 1,
+  "fields": {
+    "type": "Task"
+  }
+},
+{
+  "model": "webapp.type",
+  "pk": 2,
+  "fields": {
+    "type": "bug"
+  }
+},
+{
+  "model": "webapp.type",
+  "pk": 3,
+  "fields": {
+    "type": "enhancement"
+  }
+},
+{
+  "model": "webapp.list",
+  "pk": 1,
+  "fields": {
+    "name": "qweqwe",
+    "description": "уцавыпвыаыва",
+    "created_at": "2021-03-10T13:22:50.434Z",
+    "updated_at": "2021-03-10T13:22:50.434Z",
+    "status": 1,
+    "type": 1
+  }
+},
+{
+  "model": "webapp.list",
+  "pk": 2,
+  "fields": {
+    "name": "asdasdasdasd",
+    "description": "asdasdasczxcc",
+    "created_at": "2021-03-10T13:24:25.072Z",
+    "updated_at": "2021-03-10T13:24:25.073Z",
+    "status": 2,
+    "type": 2
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$GToMiMCpz0mY$J9NL7lIteMi8jpKfu1KdB1axpDdl3W8Cjz3hfCnUYqc=",
+    "last_login": "2021-03-10T12:55:36.293Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@mail.ru",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2021-03-10T12:54:09.505Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
