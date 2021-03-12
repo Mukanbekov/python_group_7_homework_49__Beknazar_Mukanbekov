@@ -5,6 +5,7 @@
 {% endblock link_css %}
 {% block content %}
 <body>
+    <br><br>
 <div align="center">
     <div class="list-group" style="width: 20rem">
 
@@ -18,8 +19,8 @@
     <li class="list-group-item list-group-item-action">{{ list.description }}</li>
     <li class="list-group-item list-group-item-action">{{ list.created_at|date:"Y-m-d"}}</li>
     <li class="list-group-item list-group-item-action">{{ list.updated_at|date:"Y-m-d"}}</li>
-      <a href="{% url 'task_update' list.id %}">Редактировать</a>
-      <a href="{% url 'task_delete' list.id %}">Удалить</a>
+      <a type="button" class="btn btn-primary" href="{% url 'task_update' list.id %}">Редактировать</a>
+      <a type="button" class="btn btn-primary" href="{% url 'task_delete' list.id %}">Удалить</a>
   </ul>
 </div>
 </div>
